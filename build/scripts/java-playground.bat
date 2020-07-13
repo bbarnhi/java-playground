@@ -86,7 +86,7 @@ set CLASSPATH=%APP_HOME%\lib\java-playground.jar;%APP_HOME%\lib\guava-29.0-jre.j
 
 
 @rem Execute java-playground
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %JAVA_PLAYGROUND_OPTS%  -classpath "%CLASSPATH%" java.playground.App %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %JAVA_PLAYGROUND_OPTS%  -classpath "%CLASSPATH%"  %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell

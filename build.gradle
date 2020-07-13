@@ -28,7 +28,16 @@ dependencies {
     testImplementation 'junit:junit:4.13'
 }
 
-application {
-    // Define the main class for the application.
-    mainClassName = 'java.playground.App'
+//application {
+//    // Define the main class for the application.
+//    mainClassName = 'java.playground.Application'
+//}
+
+jar {
+    manifest {
+        attributes (
+                'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+                'Main-Class': 'com.galvanize.App'
+        )
+    }
 }
